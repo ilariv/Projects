@@ -4,65 +4,133 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ilari • Linux Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --bg-color: #121212;
+      --card-bg: #1e1e1e;
+      --text-color: #e4e4e4;
+      --link-color: #80cbc4;
+      --link-hover: #b2ebf2;
+      --accent: #ffcb6b;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'JetBrains Mono', monospace;
+      background: var(--bg-color);
+      color: var(--text-color);
       margin: 0;
-      background: #f4f4f4;
-      color: #333;
-      line-height: 1.6;
+      padding: 0;
+      line-height: 1.7;
     }
+
     header {
-      background: #222;
-      color: #fff;
-      padding: 2rem 1rem;
+      background: #000;
       text-align: center;
+      padding: 2.5rem 1rem;
+      border-bottom: 1px solid #333;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: var(--accent);
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      color: var(--link-color);
+    }
+
     .container {
       max-width: 900px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
+
     .project {
-      background: #fff;
+      background: var(--card-bg);
+      border: 1px solid #333;
       padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       margin-bottom: 2rem;
+      border-radius: 10px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
+
+    .project:hover {
+      transform: scale(1.01);
+      box-shadow: 0 0 10px rgba(255, 203, 107, 0.15);
+    }
+
     .project h2 {
+      color: var(--accent);
       margin-top: 0;
     }
+
     a {
-      color: #0066cc;
+      color: var(--link-color);
       text-decoration: none;
     }
+
     a:hover {
+      color: var(--link-hover);
       text-decoration: underline;
     }
+
     footer {
       text-align: center;
-      margin-top: 4rem;
       padding: 2rem 1rem;
-      background: #eee;
       font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      .project {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Ilari • Linux Engineer</h1>
-    <p>Automation, CI/CD, DevOps & Infrastructure</p>
+    <p>Automation | DevOps | Infrastructure</p>
   </header>
 
   <div class="container">
     <section class="project">
       <h2>🔧 Ansible Patch Management</h2>
-      <p>Automated patching of production Linux servers using Ansible with service-aware reboots and Slack alerting.</p>
+      <p>Automated patching of Linux servers using Ansible, including Slack alerts and safe reboots.</p>
       <p><a href="https://github.com/YOUR_GITHUB/ansible-patch-automation" target="_blank">View on GitHub →</a></p>
     </section>
 
     <section class="project">
       <h2>🐳 Jenkins CI/CD in Docker</h2>
-      <p>Jenkins running in a Docker container with GitHub integration, auto-triggering pipelines for testing and deployment.</p>
-      <p><a href="https://gi
+      <p>Jenkins in Docker with GitHub integration and automated pipelines for deployment.</p>
+      <p><a href="https://github.com/YOUR_GITHUB/jenkins-docker-pipeline" target="_blank">View on GitHub →</a></p>
+    </section>
+
+    <section class="project">
+      <h2>📡 Podman Networking Lab</h2>
+      <p>Static IP containers using Podman + macvlan on Ubuntu. Fully documented with DNS troubleshooting.</p>
+      <p><a href="https://github.com/YOUR_GITHUB/podman-networking-lab" target="_blank">View on GitHub →</a></p>
+    </section>
+
+    <section class="project">
+      <h2>📁 Bash Scripts Library</h2>
+      <p>Collection of reusable Bash scripts for sysadmin tasks, monitoring, backups, and more.</p>
+      <p><a href="https://github.com/YOUR_GITHUB/bash-scripts" target="_blank">View on GitHub →</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>Built by Ilari • <a href="https://github.com/YOUR_GITHUB" target="_blank">GitHub</a> • <a href="mailto:your@email.com">Contact</a></p>
+  </footer>
+
+</body>
+</html>
