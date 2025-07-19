@@ -17,18 +17,22 @@
 <body class="bg-gray-950 text-gray-200">
   <header class="border-b border-gray-800 p-6 shadow-md">
     <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center">
-      <div class="text-center sm:text-left">
-        <h1 class="text-3xl font-bold text-yellow-400">Ilari • DevOps-Focused Systems Engineer</h1>
-        <p class="text-teal-300 mt-1">Linux | Kubernetes | Containerization | Automation | CI/CD</p>
+      <div class="flex flex-col sm:flex-row items-center sm:items-start sm:space-x-6 text-center sm:text-left">
+        <img src="headshot.jpg" alt="Ilari's headshot" class="w-24 h-24 rounded-full border-2 border-yellow-400 mb-4 sm:mb-0" />
+        <div>
+          <h1 class="text-3xl font-bold text-yellow-400">Ilari Vuorensyrjä</h1>
+          <p class="text-lg text-gray-300">DevOps-Focused Systems Engineer</p>
+          <p class="text-sm text-gray-400 mt-1">Based in Dallas, TX • Open to new opportunities (hybrid/remote)</p>
+          <p class="text-teal-300 mt-2">Linux | Kubernetes | Containerization | Automation | CI/CD</p>
+        </div>
       </div>
-      <div class="flex space-x-4 mt-4 sm:mt-0">
+      <div class="flex space-x-4 mt-6 sm:mt-0">
         <a href="https://github.com/ilariv" target="_blank" aria-label="GitHub" class="hover:text-teal-400">
           <i class="fab fa-github text-2xl"></i>
         </a>
         <a href="https://linkedin.com/in/ilarivuorensyrja" target="_blank" aria-label="LinkedIn" class="hover:text-teal-400">
           <i class="fab fa-linkedin text-2xl"></i>
         </a>
-        <a href="/resume.pdf" target="_blank" class="text-sm border border-teal-400 text-teal-400 px-3 py-1 rounded hover:bg-teal-400 hover:text-gray-900 transition">Download Resume</a>
       </div>
     </div>
   </header>
@@ -49,18 +53,24 @@
     </section>
 
     <section class="mb-16">
+      <h2 class="text-2xl text-yellow-400 font-semibold mb-4">Certifications</h2>
+      <ul class="list-disc list-inside text-gray-300 text-lg">
+        <li>Microsoft Certified: Azure Fundamentals (AZ-900)</li>
+      </ul>
+    </section>
+
+    <section class="mb-16">
       <h2 class="text-2xl text-yellow-400 font-semibold mb-4">Tech Stack</h2>
-      <div class="flex flex-wrap gap-3">
-        <span class="bg-gray-800 border border-gray-700 px-3 py-1 rounded text-sm">Linux</span>
-        <span class="bg-gray-800 border border-gray-700 px-3 py-1 rounded text-sm">Docker</span>
-        <span class="bg-gray-800 border border-gray-700 px-3 py-1 rounded text-sm">Kubernetes</span>
-        <span class="bg-gray-800 border border-gray-700 px-3 py-1 rounded text-sm">Ansible</span>
-        <span class="bg-gray-800 border border-gray-700 px-3 py-1 rounded text-sm">CI/CD</span>
-        <span class="bg-gray-800 border border-gray-700 px-3 py-1 rounded text-sm">GitHub Actions</span>
-        <span class="bg-gray-800 border border-gray-700 px-3 py-1 rounded text-sm">Azure</span>
-        <span class="bg-gray-800 border border-gray-700 px-3 py-1 rounded text-sm">Terraform</span>
-        <span class="bg-gray-800 border border-gray-700 px-3 py-1 rounded text-sm">Bash</span>
-        <span class="bg-gray-800 border border-gray-700 px-3 py-1 rounded text-sm">Python</span>
+      <div class="flex flex-wrap gap-4 text-2xl text-gray-400">
+        <div class="flex items-center space-x-2"><i class="fab fa-linux"></i><span class="text-sm">Linux</span></div>
+        <div class="flex items-center space-x-2"><i class="fab fa-docker"></i><span class="text-sm">Docker</span></div>
+        <div class="flex items-center space-x-2"><i class="fab fa-kubernetes"></i><span class="text-sm">Kubernetes</span></div>
+        <div class="flex items-center space-x-2"><img src="https://www.terraform.io/images/favicon-16x16.png" class="w-4 h-4" alt="Terraform"/><span class="text-sm">Terraform</span></div>
+        <div class="flex items-center space-x-2"><i class="fas fa-code"></i><span class="text-sm">Bash</span></div>
+        <div class="flex items-center space-x-2"><i class="fab fa-python"></i><span class="text-sm">Python</span></div>
+        <div class="flex items-center space-x-2"><i class="fab fa-azure"></i><span class="text-sm">Azure</span></div>
+        <div class="flex items-center space-x-2"><i class="fas fa-cogs"></i><span class="text-sm">CI/CD</span></div>
+        <div class="flex items-center space-x-2"><i class="fas fa-network-wired"></i><span class="text-sm">Networking</span></div>
       </div>
     </section>
 
