@@ -1,190 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ilari • DevOps-Focused Systems Engineer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    :root {
-      --bg-color: #121212;
-      --card-bg: #1e1e1e;
-      --text-color: #e4e4e4;
-      --link-color: #80cbc4;
-      --link-hover: #b2ebf2;
-      --accent: #ffcb6b;
-    }
-
     body {
       font-family: 'JetBrains Mono', monospace;
-      background: var(--bg-color);
-      color: var(--text-color);
-      margin: 0;
-      padding: 0;
-      line-height: 1.7;
-    }
-
-    header {
-      background: #000;
-      text-align: center;
-      padding: 2.5rem 1rem;
-      border-bottom: 1px solid #333;
-      position: relative;
-    }
-
-    .social-icons {
-      margin-bottom: 1rem;
-    }
-
-    .social-icons a {
-      color: var(--link-color);
-      margin: 0 0.6rem;
-      font-size: 1.5rem;
-      transition: color 0.3s;
-    }
-
-    .social-icons a:hover {
-      color: var(--link-hover);
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-      color: var(--accent);
-    }
-
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.1rem;
-      color: var(--link-color);
-    }
-
-    .about {
-      margin: 3rem auto 2rem;
-      max-width: 900px;
-      padding: 0 1rem;
-      text-align: center;
-    }
-
-    .about h2 {
-      color: var(--accent);
-      margin-bottom: 1rem;
-    }
-
-    .about p {
-      color: var(--text-color);
-      font-size: 1.05rem;
-      line-height: 1.8;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    .project {
-      background: var(--card-bg);
-      border: 1px solid #333;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      border-radius: 10px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .project:hover {
-      transform: scale(1.01);
-      box-shadow: 0 0 10px rgba(255, 203, 107, 0.15);
-    }
-
-    .project h2 {
-      color: var(--accent);
-      margin-top: 0;
-    }
-
-    a {
-      color: var(--link-color);
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: var(--link-hover);
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: #777;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.5rem;
-      }
-
-      .project {
-        padding: 1rem;
-      }
-
-      .social-icons a {
-        font-size: 1.3rem;
-        margin: 0 0.4rem;
-      }
     }
   </style>
 </head>
-<body>
 
-  <header>
-    <div class="social-icons">
-      <a href="https://github.com/ilariv" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/ilarivuorensyrja" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+<body class="bg-gray-950 text-gray-200">
+  <header class="border-b border-gray-800 p-6 shadow-md">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center">
+      <div class="text-center sm:text-left">
+        <h1 class="text-3xl font-bold text-yellow-400">Ilari • DevOps-Focused Systems Engineer</h1>
+        <p class="text-teal-300 mt-1">Linux | Kubernetes | Containerization | Automation | CI/CD</p>
+      </div>
+      <div class="flex space-x-4 mt-4 sm:mt-0">
+        <a href="https://github.com/ilariv" target="_blank" aria-label="GitHub" class="hover:text-teal-400">
+          <i class="fab fa-github text-2xl"></i>
+        </a>
+        <a href="https://linkedin.com/in/ilarivuorensyrja" target="_blank" aria-label="LinkedIn" class="hover:text-teal-400">
+          <i class="fab fa-linkedin text-2xl"></i>
+        </a>
+        <a href="/resume.pdf" target="_blank" class="text-sm border border-teal-400 text-teal-400 px-3 py-1 rounded hover:bg-teal-400 hover:text-gray-900 transition">Download Resume</a>
+      </div>
     </div>
-    <h1>Ilari • DevOps-Focused Systems Engineer</h1>
-    <p>Linux | Kubernetes | Containerization | Automation | CI/CD</p>
   </header>
 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>
-      I'm a Systems Engineer with a strong background in Linux and cloud infrastructure. Over the past 5+ years, I’ve automated systems, built containerized environments, and recently started diving deep into DevOps practices like CI/CD, Kubernetes, and IaC. I’m passionate about building reliable, automated systems and growing into a DevOps-focused role.
-    </p>
-  </section>
-
-  <div class="container">
-    <section class="project">
-      <h2>Ansible Patch Management</h2>
-      <p>Automated patching of Linux servers using Ansible, including Slack alerts and safe reboots.</p>
-      <p><a href="https://github.com/ilariv/ansible" target="_blank">View on GitHub →</a></p>
+  <main class="max-w-4xl mx-auto px-4 py-10">
+    <section class="mb-16">
+      <h2 class="text-2xl text-yellow-400 font-semibold mb-4">About Me</h2>
+      <p class="text-lg leading-relaxed text-gray-300">
+        I'm a Systems Engineer with over 5 years of experience in Linux systems administration, infrastructure automation,
+        and managing containerized environments. I specialize in cloud infrastructure and am actively transitioning into a
+        DevOps role through hands-on projects with CI/CD, Kubernetes, and infrastructure as code.
+      </p>
+      <p class="text-lg leading-relaxed text-gray-300 mt-4">
+        I'm passionate about building scalable, secure systems and continuously improving workflows through automation.
+        Based in Dallas, TX – open to remote/hybrid opportunities. Open to new roles focused on DevOps, cloud engineering,
+        and automation.
+      </p>
     </section>
 
-    <section class="project">
-      <h2>Jenkins CI/CD in Docker</h2>
-      <p>Jenkins in Docker with GitHub integration and automated pipelines for deployment.</p>
-      <p><a href="https://github.com/ilariv/jenkins-docker-pipeline" target="_blank">View on GitHub →</a></p>
+    <section class="mb-16">
+      <h2 class="text-2xl text-yellow-400 font-semibold mb-4">Tech Stack</h2>
+      <div class="flex flex-wrap gap-3">
+        <span class="bg-gray-800 border border-gray-700 px-3 py-1 rounded text-sm">Linux</span>
+        <span class="bg-gray-800 border border-gray-700 px-3 py-1 rounded text-sm">Docker</span>
+        <span class="bg-gray-800 border border-gray-700 px-3 py-1 rounded text-sm">Kubernetes</span>
+        <span class="bg-gray-800 border border-gray-700 px-3 py-1 rounded text-sm">Ansible</span>
+        <span class="bg-gray-800 border border-gray-700 px-3 py-1 rounded text-sm">CI/CD</span>
+        <span class="bg-gray-800 border border-gray-700 px-3 py-1 rounded text-sm">GitHub Actions</span>
+        <span class="bg-gray-800 border border-gray-700 px-3 py-1 rounded text-sm">Azure</span>
+        <span class="bg-gray-800 border border-gray-700 px-3 py-1 rounded text-sm">Terraform</span>
+        <span class="bg-gray-800 border border-gray-700 px-3 py-1 rounded text-sm">Bash</span>
+        <span class="bg-gray-800 border border-gray-700 px-3 py-1 rounded text-sm">Python</span>
+      </div>
     </section>
 
-    <section class="project">
-      <h2>Docker Zscaler Private Access Deployment</h2>
-      <p>Static IP containers using Podman + macvlan on Ubuntu. Fully documented with DNS troubleshooting.</p>
-      <p><a href="https://github.com/ilariv/podman-networking-lab" target="_blank">View on GitHub →</a></p>
-    </section>
+    <section class="space-y-10">
+      <div class="bg-gray-900 border border-gray-800 rounded-lg p-6 hover:shadow-xl transition">
+        <h3 class="text-xl font-bold text-yellow-400">Ansible Patch Management</h3>
+        <p class="mt-2">Automated patching of Linux servers using Ansible, including Slack alerts and safe reboots.</p>
+        <a href="https://github.com/ilariv/ansible" target="_blank" class="text-teal-400 hover:underline mt-2 inline-block">View on GitHub →</a>
+      </div>
 
-    <section class="project">
-      <h2>Bash Scripts Library</h2>
-      <p>Collection of Ilari's reusable Bash scripts for sysadmin tasks, monitoring, backups, and more.</p>
-      <p><a href="https://github.com/ilariv/bash" target="_blank">View on GitHub →</a></p>
-    </section>
-  </div>
+      <div class="bg-gray-900 border border-gray-800 rounded-lg p-6 hover:shadow-xl transition">
+        <h3 class="text-xl font-bold text-yellow-400">Jenkins CI/CD in Docker</h3>
+        <p class="mt-2">Jenkins in Docker with GitHub integration and automated pipelines for deployment.</p>
+        <a href="https://github.com/ilariv/jenkins-docker-pipeline" target="_blank" class="text-teal-400 hover:underline mt-2 inline-block">View on GitHub →</a>
+      </div>
 
-  <footer>
-    <p>Built by Ilari • <a href="https://github.com/ilariv" target="_blank">GitHub</a> • <a href="mailto:ilari.vuorensyrja@outlook.com">Contact</a></p>
+      <div class="bg-gray-900 border border-gray-800 rounded-lg p-6 hover:shadow-xl transition">
+        <h3 class="text-xl font-bold text-yellow-400">Docker Zscaler Private Access Deployment</h3>
+        <p class="mt-2">Static IP containers using Podman + macvlan on Ubuntu. Fully documented with DNS troubleshooting.</p>
+        <a href="https://github.com/ilariv/podman-networking-lab" target="_blank" class="text-teal-400 hover:underline mt-2 inline-block">View on GitHub →</a>
+      </div>
+
+      <div class="bg-gray-900 border border-gray-800 rounded-lg p-6 hover:shadow-xl transition">
+        <h3 class="text-xl font-bold text-yellow-400">Bash Scripts Library</h3>
+        <p class="mt-2">Collection of Ilari's reusable Bash scripts for sysadmin tasks, monitoring, backups, and more.</p>
+        <a href="https://github.com/ilariv/bash" target="_blank" class="text-teal-400 hover:underline mt-2 inline-block">View on GitHub →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center text-sm text-gray-500 py-8 border-t border-gray-800">
+    <p>Built by Ilari • <a href="mailto:ilari.vuorensyrja@outlook.com" class="hover:underline text-teal-400">Contact</a></p>
   </footer>
 
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
