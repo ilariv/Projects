@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ilari • Linux Engineer</title>
+  <title>Ilari • DevOps Engineer</title>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     :root {
       --bg-color: #121212;
@@ -29,6 +30,22 @@
       text-align: center;
       padding: 2.5rem 1rem;
       border-bottom: 1px solid #333;
+      position: relative;
+    }
+
+    .social-icons {
+      margin-bottom: 1rem;
+    }
+
+    .social-icons a {
+      color: var(--link-color);
+      margin: 0 0.6rem;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: var(--link-hover);
     }
 
     header h1 {
@@ -92,44 +109,57 @@
       .project {
         padding: 1rem;
       }
+      .social-icons a {
+        font-size: 1.3rem;
+        margin: 0 0.4rem;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Ilari • Linux Engineer</h1>
-    <p>Automation | DevOps | Infrastructure</p>
+    <div class="social-icons">
+      <a href="https://github.com/ilariv" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/ilarivuorensyrja" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <h1>Ilari • DevOps Engineer</h1>
+    <p>Linux | Kubernetes | Containerization | Automation | CI/CD </p>
   </header>
 
   <div class="container">
     <section class="project">
-      <h2>🔧 Ansible Patch Management</h2>
+      <h2>About Me</h2>
+      <p>I'm a Systems Engineer with 5+ years of experience in systems administration, managing and automating cloud infrastructure, managing containerized apps, and optimizing cloud workflows. Currently learning Kubernetes and improving CI/CD practices and looking to transition to DevOps roles.</p>
+    </section>
+
+    <section class="project">
+      <h2>Ansible Patch Management</h2>
       <p>Automated patching of Linux servers using Ansible, including Slack alerts and safe reboots.</p>
-      <p><a href="https://github.com/YOUR_GITHUB/ansible-patch-automation" target="_blank">View on GitHub →</a></p>
+      <p><a href="https://github.com/ilariv/ansible" target="_blank">View on GitHub →</a></p>
     </section>
 
     <section class="project">
-      <h2>🐳 Jenkins CI/CD in Docker</h2>
+      <h2>Jenkins CI/CD in Docker</h2>
       <p>Jenkins in Docker with GitHub integration and automated pipelines for deployment.</p>
-      <p><a href="https://github.com/YOUR_GITHUB/jenkins-docker-pipeline" target="_blank">View on GitHub →</a></p>
+      <p><a href="https://github.com/ilariv/jenkins-docker-pipeline" target="_blank">View on GitHub →</a></p>
     </section>
 
     <section class="project">
-      <h2>📡 Podman Networking Lab</h2>
+      <h2>Docker Zscaler Private Access Deployment</h2>
       <p>Static IP containers using Podman + macvlan on Ubuntu. Fully documented with DNS troubleshooting.</p>
-      <p><a href="https://github.com/YOUR_GITHUB/podman-networking-lab" target="_blank">View on GitHub →</a></p>
+      <p><a href="https://github.com/ilariv/podman-networking-lab" target="_blank">View on GitHub →</a></p>
     </section>
 
     <section class="project">
-      <h2>📁 Bash Scripts Library</h2>
-      <p>Collection of reusable Bash scripts for sysadmin tasks, monitoring, backups, and more.</p>
+      <h2>Bash Scripts Library</h2>
+      <p>Collection of Ilari's reusable Bash scripts for sysadmin tasks, monitoring, backups, and more.</p>
       <p><a href="https://github.com/ilariv/bash" target="_blank">View on GitHub →</a></p>
     </section>
   </div>
 
   <footer>
-    <p>Built by Ilari • <a href="https://github.com/YOUR_GITHUB" target="_blank">GitHub</a> • <a href="mailto:your@email.com">Contact</a></p>
+    <p>Built by Ilari • <a href="https://github.com/ilariv" target="_blank">GitHub</a> • <a href="mailto:ilari.vuorensyrja@outlook.com">Contact</a></p>
   </footer>
 
 </body>
