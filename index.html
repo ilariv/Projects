@@ -16,8 +16,9 @@
 </head>
 
 <body class="bg-gray-950 text-gray-200">
-  <header class="border-b border-gray-800 p-6 shadow-md">
+  <header class="border-b border-gray-800 p-6 shadow-md relative">
     <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center">
+      <!-- Left Side: Headshot & Info -->
       <div class="flex flex-col sm:flex-row items-center sm:items-start sm:space-x-6 text-center sm:text-left">
         <img src="images/ilariv.png" alt="Ilari's headshot" class="w-24 h-24 rounded-full border-2 border-yellow-400 mb-4 sm:mb-0" />
         <div>
@@ -27,12 +28,16 @@
           <p class="text-teal-300 mt-2">Linux | Kubernetes | Containerization | Automation | CI/CD</p>
         </div>
       </div>
-      <div class="flex space-x-4 mt-6 sm:mt-0">
-        <a href="https://github.com/ilariv" target="_blank" aria-label="GitHub" class="hover:text-teal-400">
-          <i class="fab fa-github text-2xl"></i>
+  
+      <!-- Right Side: Buttons -->
+      <div class="absolute top-6 right-6 flex space-x-4">
+        <a href="https://github.com/ilariv" target="_blank" class="bg-gray-800 hover:bg-teal-600 text-white text-sm font-semibold px-4 py-2 rounded shadow transition duration-300 flex items-center space-x-2">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
         </a>
-        <a href="https://linkedin.com/in/ilari-vuorensyrja" target="_blank" aria-label="LinkedIn" class="hover:text-teal-400">
-          <i class="fab fa-linkedin text-2xl"></i>
+        <a href="https://linkedin.com/in/ilari-vuorensyrja" target="_blank" class="bg-blue-700 hover:bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded shadow transition duration-300 flex items-center space-x-2">
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
         </a>
       </div>
     </div>
@@ -99,7 +104,10 @@
         </div>
     
         <div class="flex items-center space-x-2">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="CI/CD" class="w-5 h-5" />
+          <img src="<div class="flex items-center space-x-2">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="CI/CD" class="w-5 h-5" />
+            <span>CI/CD</span>
+          </div>/gitlab/gitlab-original.svg" alt="CI/CD" class="w-5 h-5" />
           <span>CI/CD</span>
         </div>
     
